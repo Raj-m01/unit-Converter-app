@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="len">
+        <item>meter</item>
+        <item>centimeter</item>
+        <item>kilometer</item>
+        <item>yard</item>
+        <item>foot</item>
+        <item>inch</item>
+        <item>mile</item>
+        <item>millimeter</item>
+
+    </string-array>
+
+
+    <string-array name="weight">
+        <item>kilogram</item>
+        <item>milligram</item>
+        <item>gram</item>
+        <item>pound</item>
+        <item>metric ton</item>
+        <item>carat</item>
+
+    </string-array>
+
+
+
+    <string-array name="time">
+        <item>minute</item>
+        <item>second</item>
+        <item>millisecond</item>
+        <item>microsecond</item>
+        <item>nanosecond</item>
+        <item>hour</item>
+        <item>day</item>
+        <item>week</item>
+        <item>month</item>
+        <item>year</item>
+    </string-array>
+
+    <string-array name="temp">
+        <item>celsius</item>
+        <item>kelvin</item>
+        <item>fahrenheit</item>
+    </string-array>
+
+</resources>

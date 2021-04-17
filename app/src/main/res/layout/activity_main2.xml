@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+android:orientation="vertical"
+
+    tools:context=".MainActivity2">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        tools:ignore="UselessParent"
+
+        >
+
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_margin="60dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+
+
+
+
+            android:id="@+id/len_button"
+            android:onClick="length_page"
+            android:text="@string/length"
+            app:cornerRadius="20dp"
+            tools:ignore="ButtonStyle,NestedWeights" />
+
+        <Button
+
+            android:layout_margin="40dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="120dp"
+            android:id="@+id/weight_button"
+            android:onClick="weight_page"
+            android:text="@string/weight"
+            app:cornerRadius="20dp"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        tools:ignore="UselessParent">
+
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_margin="60dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:id="@+id/time_button"
+            android:onClick="time_page"
+            android:text="@string/time"
+            app:cornerRadius="20dp"
+            tools:ignore="ButtonStyle,NestedWeights" />
+
+        <Button
+
+            android:layout_margin="40dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="120dp"
+            android:id="@+id/temp_button"
+            android:onClick="temp_page"
+            android:text="@string/temp"
+            app:cornerRadius="20dp"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        />
+
+
+
+</LinearLayout>

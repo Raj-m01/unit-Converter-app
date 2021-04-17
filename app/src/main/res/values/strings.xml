@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">unit conversion</string>
+    <string name="unit_convert">UNIT CONVERT</string>
+    <string name="length">length</string>
+    <string name="weight">weight</string>
+    <string name="time">time</string>
+    <string name="temp">temperat--ure</string>
+    <string name="enter_units">enter units</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="convert">convert</string>
+    <string name="_1">1</string>
+</resources>
