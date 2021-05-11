@@ -1,5 +1,6 @@
 package com.example.unitconversion;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -62,6 +63,30 @@ public class MainActivity2 extends AppCompatActivity {
 
 
         startActivity(i4);
+
+
+    }
+
+    public void ang_page(View view) {
+
+        Button ang_button = (Button) findViewById(R.id.ang_button);
+
+        Intent i5 = new Intent(this, AngleActivity.class);
+
+
+        startActivity(i5);
+
+
+    }
+
+    public void data_page(View view) {
+
+        Button data_button = (Button) findViewById(R.id.data_button);
+
+        Intent i6 = new Intent(this, DataActivity.class);
+
+
+        startActivity(i6);
 
 
     }

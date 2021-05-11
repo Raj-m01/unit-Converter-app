@@ -45,4 +45,36 @@
         <item>fahrenheit</item>
     </string-array>
 
+    <string-array name="angle">
+        <item>degree</item>
+        <item>radian</item>
+        <item>minutes</item>
+        <item>seconds</item>
+        <item>sign</item>
+        <item>octant</item>
+        <item>sextant</item>
+        <item>quadrant</item>
+        <item>revolution</item>
+        <item>gon</item>
+        <item>mil</item>
+    </string-array>
+
+    <string-array name="data">
+       0 <item>megabit(Mb)</item>
+        <item>bit(b)</item>
+        <item>kilobit(kb)</item>
+        3<item>gigabit(Gb)</item>
+        <item>terabit(Tb)</item>
+        <item>petabit(Pb)</item>
+        6<item>exabit(Eb)</item>
+        <item>nibble</item>
+       8 <item>byte(B)</item>
+        <item>kilobyte(kB)</item>
+        <item>megabyte(MB)</item>
+        11<item>gigabyte(GB)</item>
+        <item>terabyte(TB)</item>
+        13<item>petabyte(PB)</item>
+        14<item>exabyte(EB)</item>
+    </string-array>
+
 </resources>

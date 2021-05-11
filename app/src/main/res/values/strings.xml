@@ -4,10 +4,11 @@
     <string name="length">length</string>
     <string name="weight">weight</string>
     <string name="time">time</string>
-    <string name="temp">temperat--ure</string>
+    <string name="temp">temperature</string>
     <string name="enter_units">enter units</string>
     <string name="from">from</string>
     <string name="to">to</string>
     <string name="convert">convert</string>
     <string name="_1">1</string>
+    <string name="angle">angle</string>
 </resources>

@@ -2,97 +2,147 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
 android:orientation="vertical"
+android:gravity="center_vertical"
 
-    tools:context=".MainActivity2">
-
+    tools:context=".MainActivity2"
+    tools:ignore="ScrollViewCount">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center"
-
         android:orientation="horizontal"
         tools:ignore="UselessParent"
+android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="3dp"
 
         >
 
 
         <Button
 
-            android:layout_width="0dp"
-            android:layout_margin="60dp"
-            android:layout_height="120dp"
-            android:layout_weight="1"
-
-
-
-
             android:id="@+id/len_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
             android:onClick="length_page"
             android:text="@string/length"
-            app:cornerRadius="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:backgroundTint="#fed049"
+            app:cornerRadius="10dp"
             tools:ignore="ButtonStyle,NestedWeights" />
 
         <Button
 
-            android:layout_margin="40dp"
+
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="120dp"
+            android:layout_height="match_parent"
             android:id="@+id/weight_button"
             android:onClick="weight_page"
             android:text="@string/weight"
-            app:cornerRadius="20dp"
+            app:cornerRadius="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:backgroundTint="#fed049"
             tools:ignore="ButtonStyle" />
 
     </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginBottom="20dp"
+android:layout_marginBottom="-7dp"
+        android:layout_marginHorizontal="10dp"
         tools:ignore="UselessParent">
 
 
         <Button
 
             android:layout_width="0dp"
-            android:layout_margin="60dp"
-            android:layout_height="120dp"
+            app:cornerRadius="10dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/time_button"
             android:onClick="time_page"
             android:text="@string/time"
-            app:cornerRadius="20dp"
+            android:textSize="20sp"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/black"
+            app:backgroundTint="#fed049"
             tools:ignore="ButtonStyle,NestedWeights" />
 
         <Button
 
-            android:layout_margin="40dp"
+
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="120dp"
+            android:layout_height="match_parent"
             android:id="@+id/temp_button"
             android:onClick="temp_page"
             android:text="@string/temp"
-            app:cornerRadius="20dp"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            android:textColor="@color/black"
+            app:backgroundTint="#fed049"
             tools:ignore="ButtonStyle" />
 
     </LinearLayout>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="60sp"
-        />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:orientation="horizontal"
+   android:layout_marginTop="10dp"
+           android:layout_marginHorizontal="10dp"
+           tools:ignore="UselessParent"
+          >
+
+
+           <Button
+
+               android:layout_width="0dp"
+               android:id="@+id/ang_button"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:onClick="ang_page"
+               android:text="@string/angle"
+               android:textSize="20sp"
+               android:layout_marginEnd="5dp"
+               app:cornerRadius="10dp"
+               android:textColor="@color/black"
+               app:backgroundTint="#fed049"
+               tools:ignore="ButtonStyle,NestedWeights" />
+
+           <Button
+
+               android:layout_width="0dp"
+               android:id="@+id/data_button"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:onClick="data_page"
+               android:text="data"
+               android:textSize="20sp"
+               app:cornerRadius="10dp"
+               android:textColor="@color/black"
+               app:backgroundTint="#fed049"
+               tools:ignore="ButtonStyle,NestedWeights" />
+
+       </LinearLayout>
+
 
 
 
