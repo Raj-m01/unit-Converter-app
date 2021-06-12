@@ -4,9 +4,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.GridView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -14,9 +20,68 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+
+        ArrayList<unitModel> units = new ArrayList<>(10);
+                //{"length","Weight","time","Temperature","Angle","Data"};
+
+        units.add(new unitModel("LENGTH"));
+        units.add(new unitModel("WEIGHT"));
+        units.add(new unitModel("TIME"));
+        units.add(new unitModel("TEMPERATURE"));
+        units.add(new unitModel("ANGLE"));
+        units.add(new unitModel("DATA"));
+
+
+
+
+        custom Units = new custom(this,0, units);
+
+        GridView  Grid = (GridView)findViewById(R.id.smp);
+
+        Grid.setAdapter(Units);
+
+Grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+        final Intent i;
+        switch (position) {
+            case 0:   i = new Intent(view.getContext(), LengthActivity.class);
+                break;
+            case 1:   i = new Intent(view.getContext(), WeightActivity.class);
+                break;
+            case 2:   i = new Intent(view.getContext(), TimeActivity.class);
+                break;
+            case 3:   i = new Intent(view.getContext(), TempActivity.class);
+                break;
+            case 4:   i = new Intent(view.getContext(), AngleActivity.class);
+                break;
+            case 5:   i = new Intent(view.getContext(), DataActivity.class);
+                break;
+            default:  i = new Intent(view.getContext(), MainActivity2.class);
+
+
+
+
+        }startActivity(i);
+
+    }
+}) ;
+
     }
 
 
+}
+
+
+
+
+
+
+
+
+/*
     public void length_page(View view) {
 
         Button len_button = (Button) findViewById(R.id.len_button);
@@ -90,7 +155,8 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     }
+ */
 
-}
+
 
 
