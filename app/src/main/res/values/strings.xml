@@ -4,12 +4,14 @@
     <string name="length">length</string>
     <string name="weight">weight</string>
     <string name="time">time</string>
-    <string name="temp">temperature</string>
+    <string name="temperature">temp</string>
     <string name="enter_units">enter units</string>
-    <string name="from">from</string>
-    <string name="to">to</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
     <string name="convert">convert</string>
     <string name="_1">1</string>
     <string name="angle">angle</string>
     <string name="data">data</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
